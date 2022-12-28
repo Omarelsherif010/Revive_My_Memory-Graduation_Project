@@ -46,7 +46,11 @@ INSTALLED_APPS = [
     # local apps
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
+    'videoconf.apps.VideoconfConfig',
 ]
+
+# Configure Custom User (Profile)
+AUTH_USER_MODEL = 'accounts.Profile'
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -134,3 +138,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# Authentication URLS
+LOGIN_REDIRECT_URL = 'pages:home'
+LOGOUT_REDIRECT_URL = 'login'
