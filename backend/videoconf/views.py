@@ -8,6 +8,12 @@ import time
 import json
 
 
+import environ
+
+# intialize env vars
+env = environ.Env()
+environ.Env.read_env()
+
 class LobbyView(TemplateView):
     template_name = 'videoconf/looby.html'
 
@@ -17,8 +23,8 @@ class RoomView(TemplateView):
 
 
 def getToken(request):
-    appId = "ac3937fe80b74d5480cbf289e7113a4e"
-    appCertificate = "4b86bd7722134508815f12d7b2c90a67"
+    appId = env('appId')
+    appCertificate = env('appCertificate')
     channelName = request.GET.get('channel')
     uid = random.randint(1, 230)
     expirationTimeInSeconds = 3600 * 24
