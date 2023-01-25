@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     # local apps
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
+    'doctors.apps.DoctorsConfig',
 ]
 
 # Configure Custom User (Profile)

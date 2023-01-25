@@ -1,13 +1,13 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
 
-from .forms import SignUpForm, EditForm
+from .forms import SignUpFormDoctor, EditFormDoctor
 from .models import Profile
 
 
 class CAdmin(UserAdmin):
-    add_form = SignUpForm
-    form = EditForm
+    add_form = SignUpFormDoctor
+    form = EditFormDoctor
     model = Profile
     list_display = [
         'username',
