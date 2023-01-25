@@ -1,20 +1,24 @@
 from django.contrib.auth.forms import UserChangeForm, UserCreationForm
 from .models import Profile
+from doctors.models import Doctor
 
 
-class SignUpForm(UserCreationForm):
+class SignUpFormDoctor(UserCreationForm):
     class Meta:
-        model = Profile
+        model = Doctor
         fields = UserCreationForm.Meta.fields + (
             'name',
             'email',
             'usertype',
             'profilePic',
             'birthdate',
+            'major'
         )
 
 
-class EditForm(UserChangeForm):
+class EditFormDoctor(UserChangeForm):
     class Meta:
-        model = Profile
+        model = Doctor
         fields = UserChangeForm.Meta.fields
+
+
