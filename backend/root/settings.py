@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     # local apps
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
-    'videoconf.apps.VideoconfConfig',
 ]
 
 # Configure Custom User (Profile)
