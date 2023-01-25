@@ -8,7 +8,7 @@ class SignUpForm(UserCreationForm):
         fields = UserCreationForm.Meta.fields + (
             'name',
             'email',
-            'type',
+            'usertype',
             'profilePic',
             'birthdate',
         )
