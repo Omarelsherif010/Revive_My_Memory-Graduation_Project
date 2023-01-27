@@ -9,13 +9,14 @@ class Patient(Profile, models.Model):
         Doctor, on_delete=models.PROTECT, related_name='doctor_patient')
     volunteer = models.ManyToManyField(
         Volunteer, related_name='patient_volunteer')
+    
 
 
 class Carer(models.Model):
     patient = models.ManyToManyField(Patient, related_name='carer')
-    name = models.CharField(max_length=25)
+    carername = models.CharField(max_length=25)
     phonenumber = models.CharField(max_length=12)
-    email = models.EmailField()
+    careremail = models.EmailField()
 
 
 class Radiology(models.Model):
