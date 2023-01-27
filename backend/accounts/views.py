@@ -1,6 +1,6 @@
 from django.views.generic import CreateView
 from django.urls import reverse_lazy
-from .forms import SignUpFormDoctor, SignUpFormVolunteer
+from .forms import SignUpFormDoctor, SignUpFormVolunteer, SignUpFormPatient
 from .models import Profile
 from doctors.models import Doctor
 from patients.models import Patient
@@ -14,11 +14,11 @@ class DoctorSignUpView(CreateView):
     template_name = 'registration/signup.html'
 
 
-# class PatientSignUpView(CreateView):
-#     model = Patient
-#     form_class = SignUpFormPatient
-#     success_url = reverse_lazy('login')
-#     template_name = 'registration/signup.html'
+class PatientSignUpView(CreateView):
+    model = Patient
+    form_class = SignUpFormPatient
+    success_url = reverse_lazy('login')
+    template_name = 'registration/signup.html'
 
 
 class VolunteerSignUpView(CreateView):

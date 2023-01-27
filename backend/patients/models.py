@@ -4,25 +4,22 @@ from doctors.models import Doctor
 from volunteers.models import Volunteer
 
 
-class Patient(Profile, models.Model):
-    doctorp = models.ForeignKey(
-        Doctor, on_delete=models.PROTECT, related_name='doctor_patient')
-    volunteer = models.ManyToManyField(
-        Volunteer, related_name='patient_volunteer')
-    
-
-
-class Carer(models.Model):
-    patient = models.ManyToManyField(Patient, related_name='carer')
-    carername = models.CharField(max_length=25)
-    phonenumber = models.CharField(max_length=12)
-    careremail = models.EmailField()
-
-
+# via doctor
 class Radiology(models.Model):
-    patient = models.ForeignKey(
-        Patient, on_delete=models.CASCADE, related_name='xrays')
-    x_ray = models.ImageField(null=True, blank=True)
+    x_ray = models.ImageField(null=True, blank=True, default=None)
 
     def get_xray(self):
         return self.x_ray
+
+
+class Patient(Profile, models.Model):
+    doctorp = models.ForeignKey(
+        Doctor, on_delete=models.PROTECT, related_name='doctor_patient')
+    # via doctor assign one V one to many
+    volunteerp = models.ForeignKey(
+        Volunteer, on_delete=models.PROTECT, default=None, null=True, blank=True)
+
+    carername = models.CharField(max_length=25)
+    carerphonenumber = models.CharField(max_length=12)
+    careremail = models.EmailField()
+    x_ray = models.ForeignKey(Radiology, on_delete=models.CASCADE, null=True, blank=True, default=None)

@@ -27,28 +27,26 @@ class EditFormDoctor(UserChangeForm):
 #################################################
 
 # patient forms 
-# class SignUpFormPatient(UserCreationForm):
-#     class Meta:
-#         model = Patient
-#         fields = UserCreationForm.Meta.fields + (
-#             'name',
-#             'email',
-#             'usertype',
-#             'profilePic',
-#             'birthdate',
-#             'doctorp',
-#             'volunteer',
-#             'carer',
-#             'phonenumber',
-#             'careremail',
-#             'x_ray'
-#         )
+class SignUpFormPatient(UserCreationForm):
+    class Meta:
+        model = Patient
+        fields = UserCreationForm.Meta.fields + (
+            'name',
+            'email',
+            'usertype',
+            'profilePic',
+            'birthdate',
+            'doctorp',
+            'carername',
+            'carerphonenumber',
+            'careremail',
+        )
 
 
-# class EditFormPatient(UserChangeForm):
-#     class Meta:
-#         model = Patient
-#         fields = UserChangeForm.Meta.fields
+class EditFormPatient(UserChangeForm):
+    class Meta:
+        model = Patient
+        fields = UserChangeForm.Meta.fields
 
 ####################################################
 # vol forms
