@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "Revive my memory"
+rootProject.name = "Revive"
 include ':app'
