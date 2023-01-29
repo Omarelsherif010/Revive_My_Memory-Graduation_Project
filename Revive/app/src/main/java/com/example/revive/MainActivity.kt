@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import java.text.SimpleDateFormat
 import java.util.*
 import com.example.revive.databinding.ActivityMainBinding
+import kotlinx.android.synthetic.main.activity_main.*
+
 class MainActivity : AppCompatActivity(), OnItemClick {
 
     val list = mutableListOf<TaskListData>()
