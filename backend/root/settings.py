@@ -43,20 +43,43 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    # 3rd apps
+    'rest_framework',
+    'corsheaders',
     # local apps
     'pages.apps.PagesConfig',
     'accounts.apps.AccountsConfig',
     'doctors.apps.DoctorsConfig',
     'patients.apps.PatientsConfig',
     'volunteers.apps.VolunteersConfig',
+    'posts.apps.PostsConfig',
+    # API Manager app
+    'api.apps.ApiConfig',
 ]
 
 # Configure Custom User (Profile)
 AUTH_USER_MODEL = 'accounts.Profile'
 
+RESTFRAMEWORK_CLASSES = {
+    "DEAFAULT_PERMISSION_CLASSES": [
+        "rest_framework.permissions.IsAuthenticatedOrReadOnly"
+    ],
+}
+
+# CORS
+CORS_ORIGIN_WHITELIST = (
+    "http://localhost:3000",
+    "http://localhost:8000",
+)
+
+# TRUSTED ORIGINS
+CSRF_TRUSTED_ORIGINS = ["http://localhost:3000"]
+
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',  # CORS MIDDLEWARE
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
@@ -91,10 +114,10 @@ WSGI_APPLICATION = 'root.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': env('NAME'), 
-        'USER': env('USER'), 
+        'NAME': env('NAME'),
+        'USER': env('USER'),
         'PASSWORD': env('PASSWORD'),
-        'HOST': env('HOST'), 
+        'HOST': env('HOST'),
         'PORT': env('PORT'),
     }
 }
