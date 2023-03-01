@@ -1,8 +1,12 @@
+from rest_framework_simplejwt.serializers import TokenObtainPairSerializer
+from rest_framework_simplejwt.views import TokenObtainPairView
+
 from rest_framework import generics, permissions
 from posts.models import Post
 from .serializers import PostSerializer
 from .serializers import TaskSerializer
 from tasks.models import Task
+
 
 class PostList(generics.ListAPIView):
     permission_classes = [permissions.AllowAny]
@@ -18,12 +22,32 @@ class PostDetail(generics.RetrieveUpdateDestroyAPIView):
 
 class TaskList(generics.ListAPIView):
     permission_classes = [permissions.IsAuthenticated]
+
     def get_queryset(self):
         return Task.objects.filter(author=self.request.user)
     serializer_class = TaskSerializer
 
+
 class TaskDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [permissions.IsAuthenticated]
+
     def get_queryset(self):
-        return Task.objects.filter(author=self.request.user,id=self.request.resolver_match.kwargs['pk'])
+        return Task.objects.filter(author=self.request.user, id=self.request.resolver_match.kwargs['pk'])
     serializer_class = PostSerializer
+
+
+# Authentication views
+class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
+    @classmethod
+    def get_token(self, user):
+        token = super().get_token(user)
+
+        # Add custom claims
+        token['username'] = user.username
+        # ...
+
+        return token
+
+
+class MyTokenObtainPairView(TokenObtainPairView):
+    serializer_class = MyTokenObtainPairSerializer
