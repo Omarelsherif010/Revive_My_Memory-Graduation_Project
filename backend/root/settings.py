@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'patients.apps.PatientsConfig',
     'volunteers.apps.VolunteersConfig',
     'posts.apps.PostsConfig',
+    'tasks.apps.TasksConfig',
     # API Manager app
     'api.apps.ApiConfig',
 ]
