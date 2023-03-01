@@ -25,5 +25,5 @@ class TaskList(generics.ListAPIView):
 class TaskDetail(generics.RetrieveUpdateDestroyAPIView):
     permission_classes = [permissions.IsAuthenticated]
     def get_queryset(self):
-        return Task.objects.filter(author=self.request.user)
+        return Task.objects.filter(author=self.request.user,id=self.request.resolver_match.kwargs['pk'])
     serializer_class = PostSerializer
