@@ -8,11 +8,11 @@
 
 >python -m venv .venv
 <br>
-.venv\Scripts\activate
+>.venv\Scripts\activate
 <br>
-python -m pip install -r requirements.txt
+>python -m pip install -r requirements.txt
 <br>
-python manage.py runserver
+>python manage.py runserver
 
 
 
