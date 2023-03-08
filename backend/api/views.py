@@ -5,6 +5,7 @@ from rest_framework import generics, permissions
 from posts.models import Post
 from .serializers import PostSerializer
 from .serializers import TaskSerializer
+from .serializers import DoctorSerializer, PatientSerializer, VolunteerSerializer
 from tasks.models import Task
 
 
@@ -51,3 +52,20 @@ class MyTokenObtainPairSerializer(TokenObtainPairSerializer):
 
 class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
+
+# Doctor Registration
+
+class DoctorRegister(generics.CreateAPIView):
+    permission_classes = [permissions.AllowAny]
+    serializer_class = DoctorSerializer 
+
+# Patient Registration
+class PatientRegister(generics.CreateAPIView):
+    permission_classes = [permissions.AllowAny]
+    serializer_class = PatientSerializer 
+
+
+# Volunteer Registration
+class VolunteerRegister(generics.CreateAPIView):
+    permission_classes = [permissions.AllowAny]
+    serializer_class = VolunteerSerializer 
