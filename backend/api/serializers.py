@@ -1,3 +1,4 @@
+from rest_framework.authtoken.models import Token
 from rest_framework import serializers
 from posts.models import Post
 from tasks.models import Task
@@ -60,8 +61,10 @@ class DoctorSerializer(serializers.ModelSerializer):
             birthdate=validated_data['birthdate'],
             major=validated_data['major'],
         )
+
         user.set_password(validated_data['password'])
         user.save()
+        Token.objects.create(user=user)
         return user
 
 
@@ -94,6 +97,7 @@ class VolunteerSerializer(serializers.ModelSerializer):
         )
         user.set_password(validated_data['password'])
         user.save()
+        Token.objects.create(user=user)
         return user
 
 
@@ -132,4 +136,5 @@ class PatientSerializer(serializers.ModelSerializer):
         )
         user.set_password(validated_data['password'])
         user.save()
+        Token.objects.create(user=user)
         return user
