@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="Documentation/Revive my memory (1).png" />
+  <img src="Documentation/DIAGRAMS/Revive my memory (1).png" />
 </p>
 
 ## How to run django project on your local machine
