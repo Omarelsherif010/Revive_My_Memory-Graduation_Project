@@ -56,22 +56,28 @@ class MyTokenObtainPairView(TokenObtainPairView):
     serializer_class = MyTokenObtainPairSerializer
 
 # Doctor Registration
+
+
 class DoctorRegister(generics.CreateAPIView):
     permission_classes = [permissions.AllowAny]
-    serializer_class = DoctorSerializer 
+    serializer_class = DoctorSerializer
 
 # Patient Registration
+
+
 class PatientRegister(generics.CreateAPIView):
     permission_classes = [permissions.AllowAny]
-    serializer_class = PatientSerializer 
+    serializer_class = PatientSerializer
 
 
 # Volunteer Registration
 class VolunteerRegister(generics.CreateAPIView):
     permission_classes = [permissions.AllowAny]
-    serializer_class = VolunteerSerializer 
+    serializer_class = VolunteerSerializer
 
 # Login
+
+
 class UserLoginView(views.APIView):
     permission_classes = [permissions.AllowAny]
 
