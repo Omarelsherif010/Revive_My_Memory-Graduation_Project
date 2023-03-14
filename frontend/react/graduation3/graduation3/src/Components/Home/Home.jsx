@@ -29,8 +29,18 @@ export default class Home extends Component {
   <div className='container'>
     <div className='row d-flex justify-content-between'>
       <div className='col-md-6 col-sm-6 left-content mt-5'>
-<h1>
-  Revive My Memory 
+<h1 className=''>
+  Revive My Memory<span aria-busy="true" aria-label="Loading" role="progressbar" class="container">
+  <div class="swing">
+    <div class="swing-l"></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div class="swing-r"></div>
+  </div>
+ </span>
 </h1>
 <p className='mb-5 text-muted'>
 Memory Recovery is the goal we work to protect patients<br></br>
