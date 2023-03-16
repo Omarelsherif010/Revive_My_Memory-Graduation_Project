@@ -14,10 +14,23 @@ import Doctor  from '../../images/Doctor.jpg'
 import volunter from '../../images/volunter.jpg'
 import HealthCenter from '../../images/HealthCenter.jpg'
 import Homepage1 from'../../images/Home page 1.png'
-import Homepage2 from'../../images/Home page 2.jpg'
-import newmod from '../../images/newmod.jpeg'
-import newprec from'../../images/new-pracelete.jpg'
-import Hom3new from '../../images/Hom3-new.PNG'
+import Homepage2 from'../../images/prec2.jpg'
+import newmod from '../../images/brain2.jpg'
+import newprec from'../../images/prec1.jpg'
+// import Hom3new from '../../images/Hom3-new.PNG'
+import newlog from '../../images/newlog.jpg'
+import pic8 from '../../images/Picture8.png'
+import pic9 from '../../images/Picture9.png'
+import pic10 from '../../images/Picture10.png'
+import pic11 from '../../images/Picture11.png'
+import pic1 from '../../images/Picture1.png'
+import pic2 from '../../images/Picture2.png'
+import pict6 from '../../images/Picture6.jpg'
+import pict12 from '../../images/Picture12.png'
+import pict3 from '../../images/Picture3.png'
+import pict7 from '../../images/Picture7.png'
+import pict4 from '../../images/Picture4.png'
+import Picture5 from '../../images/Picture5.png'
 export default class Home extends Component {
   render() {
     return (
@@ -49,8 +62,6 @@ Memory Recovery is the goal we work to protect patients<br></br>
   However, certain activities can engage the brain in new ways<br></br>
    potentially leading to improvements in memory, cognitive function, or creativity.
 </p>
-<button className='btn btn-primary me-4 mt-5 mb-5'>Login</button>
-<button className='btn btn-light mt-5 mb-5'>SignUp</button>
       </div>
       <div className='col-md-6 right-content'>
         <div className='gallary-parent row d-flex justify-content-between'>
@@ -60,7 +71,7 @@ Memory Recovery is the goal we work to protect patients<br></br>
           <p>
             <img src={Homepage1}></img>
             <span className='ms-5 mt-2'>
-          <img src={Homepage2}></img>
+          <img src={Homepage2} height="130px"></img>
           </span>
           </p>
           <p>
@@ -82,7 +93,7 @@ Memory Recovery is the goal we work to protect patients<br></br>
     <div className='container'>
     <div className='row d-flex justify-content-between'>
     <div className='left-part2 col-md-6'>
-<img src={Homepage1}className='me-5'></img>
+<img src={newlog}className='me-5 w-75 mt-5'height="320px"></img>
     </div>
     <div className='right-part2 col-md-6 '>
       <h2 className='text-primary mb-2 mt-5'>Revive My Memory</h2>
@@ -90,7 +101,10 @@ Memory Recovery is the goal we work to protect patients<br></br>
       Mild cognitive impairment (MCI) is the stage between<br></br> the expected decline in memory and thinking that happens<br></br> with age and the more serious decline of dementia.<br></br> MCI may include problems with memory, language<br></br>People with MCI may be aware that their memory<br></br> or mental function has "slipped."
       </p>
       <button className='btn btn-primary me-3 mt-3'>Register</button>
-      <button className='btn btn-secondary mt-3'>Learn More</button>
+      <a href='https://www.mayoclinic.org/diseases-conditions/alzheimers-disease/symptoms-causes/syc-20350447'>
+      <button className='btn btn-primary me-3 mt-3'>Learn More</button>
+
+      </a>
       </div>
   </div>
     </div>
@@ -121,8 +135,42 @@ Memory Recovery is the goal we work to protect patients<br></br>
 <div className='Home-part4 mb-5'>
   <div className='container'>
     <div className='row d-flex justify-content-evenly align-items-center'>
-      <h2 className="text-center text-danger fw-bold Tec mb-5">Our Technologies</h2>
-<img src={Hom3new} className='w-100'></img>
+      <h2 className="text-center text-primary fw-bold Tec mb-5">Our Technologies</h2>
+{/* <img src={Hom3new} className='w-100'></img> */}
+<div className='row Main ms-auto img-box'>
+  <div className='part1 col-md-4'>
+<img src={pic8} className="w-25"></img>
+<img src={pic9} className="w-25"></img>
+<img src={pic10} className="w-25"></img>
+<img src={pic11} className="reactp ms-5 mb-5 mt-5 "></img>
+  </div>
+  <div className='part2 col-md-4'>
+  <img src={pic1} className="w-75"id='Github'></img>
+  </div>
+  
+
+  <div className='part3 col-md-4'>
+  <img src={pic2} className="w-75"></img>
+  </div>
+  <div className='part3 col-md-4'>
+  <img src={pict12} className="w-50 ms-5"></img>
+  </div>
+  <div className='part3 col-md-4 '>
+  <img src={pict6} className="mt-5 ms-5"id='anim3'></img>
+  </div>
+  <div className='part3 col-md-4'>
+  <img src={pict3} className="w-75 mt-5 ms-5"></img>
+  </div>
+  <div className='part4 col-md-4'>
+  <img src={pict7} className="w-50 mt-5 ms-5"></img>
+  </div>
+  <div className='part4 col-md-4'>
+  <img src={pict4} className="w-50 ms-5"id='python'></img>
+  </div>
+  <div className='part4 col-md-4'>
+  <img src={Picture5} className="w-75 ms-5 "id='flutter'></img>
+  </div>
+</div>
     </div>
   </div>
 </div>

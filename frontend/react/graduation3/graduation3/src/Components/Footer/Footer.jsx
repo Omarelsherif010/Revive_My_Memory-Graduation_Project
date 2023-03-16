@@ -25,15 +25,18 @@ export default class Footer extends Component {
     <li className="social-icon__item"><a className="social-icon__link" href="#">
     <i class="fa-brands fa-instagram text-white ms-2 icon"></i>
       </a></li>
+      <li className="social-icon__item"><a className="social-icon__link" href="#">
+      <i class="fa-brands fa-github text-white ms-2 icon"></i>
+      </a></li>
   </ul>
-  <ul className="menu">
+  {/* <ul className="menu">
     <li className="menu__item"><a className="menu__link" href="#">Home</a></li>
     <li className="menu__item"><a className="menu__link" href="#">About</a></li>
     <li className="menu__item"><a className="menu__link" href="#">Services</a></li>
     <li className="menu__item"><a className="menu__link" href="#">Team</a></li>
     <li className="menu__item"><a className="menu__link" href="#">Contact</a></li>
-  </ul>
-  <p>©2021 Nadine Coelho | All Rights Reserved</p>
+  </ul> */}
+  <p>©2023 SkipTimes | All Rights Reserved</p>
 </footer>
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>

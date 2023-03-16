@@ -38,6 +38,8 @@ export default class Navbar extends Component {
           <Link className="nav-link text-dark" to='Contacts'>Contact</Link>
         </li>
       </ul>
+      <button className='btn btn-primary me-4 mt-5 mb-5'>Login</button>
+<button className='btn btn-light mt-5 mb-5'>LogOut</button>
     </div>
   </div>
 </nav>

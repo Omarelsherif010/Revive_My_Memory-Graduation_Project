@@ -1127,3 +1127,57 @@ section{
   line-height: 1.6;
 } */
 /*end team page*/
+
+/*Home part of technologies*/
+.Main{
+  background-color: #eeeeeeb8;
+  box-shadow: 10px 10px 5px lightblue;
+  padding: 50px;
+}
+.reactp{
+  width: 130px;
+  margin-top: 20PX;
+  margin-left:90px;
+}
+#python{
+  margin-top: 100px;
+  position: relative;
+animation-name:Move ;
+animation-duration: 1s;
+animation-iteration-count: 3;
+}
+#anim3{
+  position: relative;
+  animation-name:Move ;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+  left: 50px;
+}
+#Github{
+  position: relative;
+  animation-name:Move ;
+  animation-duration: 1s;
+  animation-iteration-count: 3;
+  top: 40px;
+}
+#flutter{
+margin-top:30px;
+position: relative;
+animation-name:Move ;
+animation-duration: 1s;
+animation-iteration-count: 3;
+
+}
+@keyframes Move{
+  from{
+bottom: 20px;
+  }
+  to{
+    bottom: 100px;
+  }
+}
+.centerimg{
+  margin-left: 40px;
+}
+
+/*end technologies*/
