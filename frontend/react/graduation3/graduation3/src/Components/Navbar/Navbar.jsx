@@ -17,25 +17,25 @@ export default class Navbar extends Component {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto  mb-lg-0 me-4">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to=''>Home</Link>
+          <Link className="nav-link active text-primary fw-bold" aria-current="page" to=''>Home</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='MemoAi'>Memo-AI</Link>
+          <Link className="nav-link text-primary" to='MemoAi'>Memo-AI</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to='HowWorks'>How It Works</Link>
+          <Link className="nav-link text-primary" to='HowWorks'>How It Works</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-dark"to='ChatMemory' >Chat Memory</Link>
+          <Link className="nav-link text-primary"to='ChatMemory' >Chat Memory</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-dark" to='Solution'>Solution</Link>
+          <Link className="nav-link text-primary" to='Solution'>Solution</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-dark" to='Team'>Team</Link>
+          <Link className="nav-link text-primary" to='Team'>Team</Link>
         </li>
         <li className="nav-item">
-          <Link className="nav-link text-dark" to='Contacts'>Contact</Link>
+          <Link className="nav-link text-primary" to='Contacts'>Contact</Link>
         </li>
       </ul>
       <button className='btn btn-primary me-4 mt-5 mb-5'>Login</button>

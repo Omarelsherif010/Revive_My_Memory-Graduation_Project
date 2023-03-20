@@ -14,11 +14,11 @@ import Doctor  from '../../images/Doctor.jpg'
 import volunter from '../../images/volunter.jpg'
 import HealthCenter from '../../images/HealthCenter.jpg'
 import Homepage1 from'../../images/Home page 1.png'
-import Homepage2 from'../../images/prec2.jpg'
-import newmod from '../../images/brain2.jpg'
-import newprec from'../../images/prec1.jpg'
+import Homepage2 from'../../images/prec2-removebg-preview.png'
+import newmod from '../../images/brain2-removebg-preview.png'
+import newprec from'../../images/prec1-removebg-preview.png'
 // import Hom3new from '../../images/Hom3-new.PNG'
-import newlog from '../../images/newlog.jpg'
+import newlog from '../../images/newlog-removebg-preview.png'
 import pic8 from '../../images/Picture8.png'
 import pic9 from '../../images/Picture9.png'
 import pic10 from '../../images/Picture10.png'
@@ -31,6 +31,8 @@ import pict3 from '../../images/Picture3.png'
 import pict7 from '../../images/Picture7.png'
 import pict4 from '../../images/Picture4.png'
 import Picture5 from '../../images/Picture5.png'
+import lastModel from '../../images/lastmodel4 (2).jpg'
+import lastprec from '../../images/lastprec2 (1).jpg'
 export default class Home extends Component {
   render() {
     return (
@@ -55,7 +57,7 @@ export default class Home extends Component {
   </div>
  </span>
 </h1>
-<p className='mb-5 text-muted'>
+<p className='mb-5 text-muted p-1'>
 Memory Recovery is the goal we work to protect patients<br></br>
  aged 50 to 70. From Alzheimer's injury<br></br>
  The brain is always active, even during sleep<br></br>
@@ -97,7 +99,7 @@ Memory Recovery is the goal we work to protect patients<br></br>
     </div>
     <div className='right-part2 col-md-6 '>
       <h2 className='text-primary mb-2 mt-5'>Revive My Memory</h2>
-      <p className='text-primary mb-2 mt-3 p-part2'>
+      <p className='mb-2 mt-3 p-part2 text-muted'>
       Mild cognitive impairment (MCI) is the stage between<br></br> the expected decline in memory and thinking that happens<br></br> with age and the more serious decline of dementia.<br></br> MCI may include problems with memory, language<br></br>People with MCI may be aware that their memory<br></br> or mental function has "slipped."
       </p>
       <button className='btn btn-primary me-3 mt-3'>Register</button>
@@ -121,8 +123,8 @@ Memory Recovery is the goal we work to protect patients<br></br>
       </div>
 
       <div className='right-part3 col-md-6'>
-        <p className='text-muted fs-4 mt-2'>
-        We Are Trying to assist The Mci Patient To commit to daily routine<br></br> and reminding him of the important events. developing new skills<br></br> and volunteering to the community to end Their difficulty<br></br> coming up with words.Through The MRi and pet scans, We can classify<br></br> whetherThe damaged Part Of The memory is MCI(Not Treatable)<br></br> or other(Treatable),So We can Help The Doctor To diagones The Patient efficiently.
+        <p className='text-muted fs-4 mt-2 p-3'>
+        We are Trying to assist The MCI Patient To commit to Daily Routine and Reminding Him of the Important Events. developing new skills and volunteering to the community to end Their difficultycoming up with words.Through The MRi and pet scans, We can classify whetherThe damaged Part Of The memory is MCI(Not Treatable) or other(Treatable),So We can Help The Doctor To diagones The Patient efficiently.
         </p>
       </div>
 
@@ -139,30 +141,30 @@ Memory Recovery is the goal we work to protect patients<br></br>
 {/* <img src={Hom3new} className='w-100'></img> */}
 <div className='row Main ms-auto img-box'>
   <div className='part1 col-md-4'>
-<img src={pic8} className="w-25"></img>
-<img src={pic9} className="w-25"></img>
-<img src={pic10} className="w-25"></img>
-<img src={pic11} className="reactp ms-5 mb-5 mt-5 "></img>
+<img src={pic10} className="w-25"id='flutter'></img>
+<img src={pic9} className="w-25"id='flutter'></img>
+<img src={pic8} className="w-25"id='flutter'></img>
+<img src={pic11} className="reactp ms-5 mb-5 mt-5 "id='flutter'></img>
   </div>
   <div className='part2 col-md-4'>
-  <img src={pic1} className="w-75"id='Github'></img>
+  <img src={pic1} className="w-75"id='Github'id='flutter'></img>
   </div>
   
 
   <div className='part3 col-md-4'>
-  <img src={pic2} className="w-75"></img>
+  <img src={pic2} className="w-75"id='flutter'></img>
   </div>
   <div className='part3 col-md-4'>
-  <img src={pict12} className="w-50 ms-5"></img>
+  <img src={pict12} className="w-50 ms-5"id='flutter'></img>
   </div>
   <div className='part3 col-md-4 '>
   <img src={pict6} className="mt-5 ms-5"id='anim3'></img>
   </div>
   <div className='part3 col-md-4'>
-  <img src={pict3} className="w-75 mt-5 ms-5"></img>
+  <img src={pict3} className="w-75 mt-5 ms-5"id='flutter'></img>
   </div>
   <div className='part4 col-md-4'>
-  <img src={pict7} className="w-50 mt-5 ms-5"></img>
+  <img src={pict7} className="w-50 mt-5 ms-5"id='flutter'></img>
   </div>
   <div className='part4 col-md-4'>
   <img src={pict4} className="w-50 ms-5"id='python'></img>
@@ -182,26 +184,26 @@ Memory Recovery is the goal we work to protect patients<br></br>
   <h2 className="text-center text-primary text-center fw-bold mb-5">Model & Breclete</h2>
   <div className='row d-flex justify-content-around align-items-center mt-5 mb-5'>
 <div className='lef-card col-md-6 gy-5'>
-<div className="card p-5" >
-  <h2 className='text-center fw-bold'>Classification Model</h2>
-  <p className='text-muted'>is a machine learning Algorithm Help us To Know More About The type of data</p>
-  <img src={newmod} className="card-img-top w-100" alt="..."></img>
+<div className="card p-3" >
+  <img src={lastModel} className="card-img-top w-100" alt="..."></img>
+  <h2 className='text-center fw-bold mt-4'>Classification Model</h2>
+  <p>is a machine learning Algorithm Help us To Know More About The type of data</p>
   <div className="card-body">
-    <h5 className="card-title">Model Details</h5>
+    <h5 className="card-title fw-bold">Model Details</h5>
     <p className="card-text">AI systems work by combining large sets of data with intelligent, iterative processing algorithms</p>
     <span>for more information go to</span><a href="#" className="btn btn-primary ms-3">MemoAi</a>
   </div>
 </div>
 </div>
 <div className='right-card col-md-6 gy-5'>
-<div className="card p-1" >
-  <h2 className='text-center fw-bold'>How Memory Works</h2>
+<div className="card p-3" >
+  <img src={lastprec} className="card-img-top w-100" alt="..."></img>
+  <h2 className='text-center fw-bold mt-4'>How Memory Works</h2>
   <p>
   the bracelet uses biometric sensors that measure the wearer’s heart rate, heart rate variability
   </p>
-  <img src={newprec} className="card-img-top w-100" alt="..."></img>
   <div className="card-body">
-    <h5 className="card-title">Breclete</h5>
+    <h5 className="card-title fw-bold">Breclete</h5>
     <p className="card-text">there are some senarios for How Breclete Works And deal with Patient.</p>
    <span> for more information go to</span> 
    <a href="#" className="btn btn-primary ms-3">Breclete Details</a>
@@ -215,8 +217,8 @@ Memory Recovery is the goal we work to protect patients<br></br>
     {/*start Home part 6 */}
 <div className='last-part mb-5'>
   <div className='container'>
-    <h2 className='text-center text-primary fw-bold mt-5 mb-5'>Whole system</h2>
-    <div className='row d-flex justify-content-between'>
+    <h2 className='text-center text-primary fw-bold mt-5 mb-5'><i class="fa-solid fa-arrows-rotate text-black"></i>Be A part of Revive Memory 2023<i class="fa-solid fa-arrows-rotate text-black"></i></h2>
+    {/* <div className='row d-flex justify-content-between'>
       <div className='last-left1 col-md-6 gy-5'>
       <div className="card p-3" >
       <a href="#"className="btn btn-primary m-auto p-2
@@ -315,6 +317,58 @@ Memory Recovery is the goal we work to protect patients<br></br>
   </div>
 </div>
         </div>
+    </div> */}
+    <div className='row d-flex justify-content-between'>
+      <div className='col-md-3 gy-5'>
+      <div class="card">
+  <div class="card-body p-2">
+    <h5 class="card-title text-center text-primary">part of Dotor</h5>
+    <p class="card-text">
+    Alzheimer’s disease (AD) is an irreversible brain disease. It slowly destroys a person’s mind and their ability to complete everyday tasks. There is currently no cure for AD.
+Doctors diagnose AD by performing physical examinations, conducting tests, noting behavior changes, and assessing memory impairment. There are many types of doctors who can diagnose and treat AD.
+If you’re worried a loved one might have AD, read on to see which doctors might be involved in treating the disease and how to find the right specialists.
+    </p>
+    <button className='btn btn-primary btn-patient p-2 mt-2'>Connect to Doctor</button>
+  </div>
+</div>
+      </div>
+      <div className='col-md-3 gy-5'>
+      <div class="card">
+  <div class="card-body p-2 test-7">
+    <h5 class="card-title text-center text-primary">part of patient</h5>
+    <p class="card-text ">
+    During the later stages of Alzheimer’s disease, a person may lose the ability to move and spend much of his or her time in a bed or chair. This lack of movement can cause problems such as pressure sores or bedsores, and stiffness of the arms, hands, and legs.
+If the person with Alzheimer’s cannot move around on his or her own, contact a home health aide, physical therapist, or nurse for help. These professionals can show you how to move the person safely physical therapist can also show In the UK, the National Institute for Health and Care Excellence (NICE)
+    </p>
+ <a href='#'>
+  <button className='btn btn-primary btn-patient p-2 mt-2'>Connect to Patient</button>
+ </a>
+  </div>
+</div>
+      </div>
+      <div className='col-md-3 gy-5'>
+      <div class="card">
+  <div class="card-body test-7">
+    <h5 class="card-title text-center text-primary">part of volunter</h5>
+    <p class="card-text">
+    Alzheimer's Association volunteers deliver support and education, raise funds, advocate for Alzheimer’s and more to help achieve our vision of a world without Alzheimer’s and all other dementia®. Whatever your skills and whatever time you have available, we have in-person and virtual opportunities to provide vital support for people living with Alzheimer's and their families.
+    At the Alzheimer's Association, we believe that diverse perspectives are critical to achieving health equity And More than others 
+    </p>
+    <button className='btn btn-primary btn-patient py-2 mt-3'>Connect to Volunter</button>
+  </div>
+</div>
+      </div>
+      <div className='col-md-3 gy-5'>
+      <div class="card">
+  <div class="card-body test-7">
+    <h5 class="card-title text-center text-primary">part of contributers</h5>
+    <p class="card-text">
+    Aim and objective: This study aimed to identify the variables that contributed to Quality of Life (QoL) of Alzheimer’s Disease (AD) caregivers, taking into consideration the caregiving context, stressors, role strains, and resources. Methods: The sample included 102 caregivers of AD patients who answered the following instruments: Depression, Anxiety and Stress Scale-21; Satisfaction with Social Support Scale; Revised Memory and Behavioral Problems Checklist; Family Communication
+    </p>
+    <button className='btn btn-primary btn-patient p-2 mt-3'>Connect with conributers</button>
+  </div>
+</div>
+      </div>
     </div>
   </div>
 </div>
