@@ -20,8 +20,31 @@
 ## MRI Analysis
 
 # System Architecture (How it Works)
+**We have created this "How it Works" when participating in Microsoft Imagine Cup**
+
+<p align="left">
+  <img src="imgs\readme-imgs\System Architecture\howitworks.jpg" width=800 />
+</p>
 
 # Project Management (GitHub & Drive & Discord)
+**We used GitHub Project Board to manage our tasks using the GitHub Flow**
+
+<p align="left">
+  <img src="imgs\readme-imgs\Project Management\GitHub-Project_Board_First_Sprint.jpg" width=800 />
+</p>
+
+**We keep tasks organized using issues**
+
+<p align="left">
+  <img src="imgs\readme-imgs\Project Management\tasks-on-board.jpg"width=800 />
+</p>
+
+**We have used Discord Server to organize discussions for everything (Chat between team made easy)**
+
+<p align="left">
+  <img src="imgs\readme-imgs\Project Management\discord.jpg" width=800 />
+</p>
+
 
 # Implementation
 
@@ -34,9 +57,40 @@
 ## Website (Backend & Frontend)
 
 # Technologies
+**We have used many technologies as we have website, mobile, ML and we do all of that on GitHub and Azure**
+
+<p align="left">
+  <img src="imgs\readme-imgs\Technologies\Technologies.jpg" width=800/>
+</p>
 
 # Competitions
 
+**Participated in Four Competitions**
+
+<p align="left">
+  <img src="imgs\readme-imgs\Competitions\Four Competitions.jpg"width=800 />
+</p>
+
+**Winner of MLH Hackathon (Hack & Wellness 2). [Link to Hackathon](https://devpost.com/software/ai-diet-assistant)**
+
+<p align="left">
+  <img src="imgs\readme-imgs\Competitions\Winner.jpg" width=800 />
+</p>
+
+**Participated in Three Hackahtons on MLH**
+<p align="left">
+  <img src="imgs\readme-imgs\Competitions\Three Hackahtons.jpg" width=800 />
+</p>
+
 # Our Team
 
+<p align="left">
+  <img src="imgs\readme-imgs\Our Team\Team.jpg" width=800 />
+</p>
 
+- **Omar Elsherif - Machine Learning & Data Analysis - [LinkedIn](https://www.linkedin.com/in/omarelsherif010/)**
+- **Ahmed Tarek - Machine Learning & Data Analysis - [LinkedIn](https://www.linkedin.com/in/ahmed-tarek-4135251b3/)**
+- **Anas Osama - Backend Django - [LinkedIn](https://www.linkedin.com/in/anasos20/)**
+- **Amr Atif - Backend Django - [LinkedIn](https://www.linkedin.com/in/amr-atif-3b798a209/)**
+- **Mohamed Tabana - Mobile and DevOps - [LinkedIn](https://www.linkedin.com/in/muhammed-tabana-/)**
+- **Esmael Mosaad - Frontend React - [LinkedIn](https://www.linkedin.com/in/esmael-mosaad-758a28247/)**
