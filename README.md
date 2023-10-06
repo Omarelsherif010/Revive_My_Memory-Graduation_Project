@@ -13,7 +13,7 @@
 
 - The website also integrates an advanced artificial intelligence (AI) model capable of detecting various types of Alzheimer's disease and mild cognitive impairment. This model analyzes patient MRI scans to predict the presence and progression of these conditions, further assisting doctors in providing accurate diagnoses and personalized treatment plans.
 
-# ADNI Dataset
+# ADNI Dataset 
  
 # Data Analysis
 ## Meta Analysis
