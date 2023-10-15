@@ -14,10 +14,22 @@
 - The website also integrates an advanced artificial intelligence (AI) model capable of detecting various types of Alzheimer's disease and mild cognitive impairment. This model analyzes patient MRI scans to predict the presence and progression of these conditions, further assisting doctors in providing accurate diagnoses and personalized treatment plans.
 
 # ADNI Dataset 
- 
+**Alzheimer’s Disease Neuroimaging Initiative (ADNI) collected from the [website](https://adni.loni.usc.edu/data-samples/access-data/) based on [MCI Paper](https://www.csbj.org/article/S2001-0370(22)00340-3/fulltext)**
+<p align="left">
+  <img src="imgs\readme-imgs\ADNI Dataset\ADNI-Dataset.jpg" width=800 />
+</p>
+
 # Data Analysis
 ## Meta Analysis
+<p align="left">
+  <img src="imgs\readme-imgs\ADNI Dataset\metadata-analysis.jpg" width=800 />
+</p>
+
 ## MRI Analysis
+<p align="left">
+  <img src="imgs\readme-imgs\Data Analysis\MRI-Analysis.jpg" width=800 />
+</p>
+
 
 # System Architecture (How it Works)
 **We have created this "How it Works" when participating in Microsoft Imagine Cup**
@@ -48,13 +60,29 @@
 
 # Implementation
 
-## Remote Database
-
 ## Mobile App
+<p align="left">
+  <img src="imgs\readme-imgs\Implementation\mobile-app.jpg" width=800 />
+</p>
 
 ## Model Implementation
+<p align="left">
+  <img src="imgs\readme-imgs\Implementation\azure-pipeline.jpg" width=800 />
+</p>
 
 ## Website (Backend & Frontend)
+<p align="left">
+  <img src="imgs\readme-imgs\Implementation\backend-django.jpg" width=800 />
+</p>
+<p align="left">
+  <img src="imgs\readme-imgs\Implementation\video-chat.jpg" width=800 />
+</p>
+<p align="left">
+  <img src="imgs\readme-imgs\Implementation\frontend-2.jpg" width=800 />
+</p>
+<p align="left">
+  <img src="imgs\readme-imgs\Implementation\frontend-1.jpg" width=800 />
+</p>
 
 # Technologies
 **We have used many technologies as we have website, mobile, ML and we do all of that on GitHub and Azure**
